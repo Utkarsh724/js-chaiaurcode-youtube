@@ -16,7 +16,7 @@ Primitive Datatypes in js -
 2) bigint => It can store very large values that are more than the datatype-number
 3) String => ""
 4) boolean => true/false
-5) null => It is a standalone value as well as a datatype. It is a representation of an empty value. But it is an object. This being an object is a flaw in js. 
+5) null => It is a standalone value as well as a datatype. It is a representation of an empty value. But it is an object. This being an object is a flaw in js. typeof null will give you object.
 6) undefined => value is not assigned
 7) symbol => We use this for uniqueness
 */
