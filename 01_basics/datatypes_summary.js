@@ -17,7 +17,7 @@ any type of value to a variable without declaring its type.
 const id = Symbol('123') 
 const anotherId = Symbol('123')
 
-console.log(id === anotherId); //False as symbol is unique for each variable
+//console.log(id === anotherId); //False as symbol is unique for each variable
 
 //bigint - typeof bigint will give you bigint
 
@@ -43,7 +43,30 @@ const myFunction = function(){
 
 //typeof - finds data type of a variable
 
-console.log(typeof id);
+//console.log(typeof id);
 
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Types of memory - Stack (Used by primitive data types), Heap (Used by non-primitive data types)
+
+let myYoutubeName = "Utkarshyoutube"
+let anotherName = myYoutubeName
+anotherName = "SecondYoutube"
+
+console.log(myYoutubeName); //The value will be different in both cases as the copy of the original value was given.
+console.log(anotherName);   //The copies of the original value is given in stack
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl",
+}
+
+let userTwo = userOne
+
+userTwo.email = "utkarsh@gmail.com" //as the reference of userOne was given to userTwo therefore the value of email will change
+                                    //for both userOne and userTwo
+console.log(userOne.email); //The values will be same in both cases as the reference of the object in memory was given in this
+console.log(userTwo.email); //The reference of the memory is given from heap
 
 
