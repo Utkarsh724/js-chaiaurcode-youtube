@@ -1,5 +1,6 @@
 const myArr = [0,1,2,3,4,5] //arrays in js are resizable and can contain a mix of datatypes. Array is of object datatype.
-                            //If you do array-copy operations then it copies the reference of the array.
+                            //If you do array-copy operations then it copies the reference of the array. We can't access elements
+                            //of an array by using a string as index. The index has to be a number like 0,1,2 etc.
 const myHeroes = ["Shaktiman", "Iron man"]
 
 const myArr2 = new Array(1,2,3,4,5)
