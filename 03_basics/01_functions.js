@@ -26,4 +26,35 @@ function loginUserMessage(username = "Sam"){ // Declaring default value
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage('utkarsh'));
+//console.log(loginUserMessage('utkarsh'));
+
+function calculateCartPrice(val1, val2, ...num1){ // Here '...' is rest operator (it has same notation as spread operator). It can take variable number of argumnets as parameters and makes an array out of them.
+    return num1
+}
+
+//console.log(calculateCartPrice(200, 400, 500, 600, 1000));
+
+const user = {
+    username : "Utkarsh",
+    prices : 199,
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+
+//handleObject(user)
+//handleObject({        //These type of objects that are created on the fly and passed directly as arguments to functions without being assigned to a variable, are called anonymous objects or inline objects.
+//    username : "Sam",
+//    price : 399
+//})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 100, 600])); //This is anonymous or inline objects.
