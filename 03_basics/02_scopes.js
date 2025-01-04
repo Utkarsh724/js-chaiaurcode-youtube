@@ -45,13 +45,13 @@ if(true){
 
 console.log(addOne(5)) //This function call will run inspite of it being above its function declaration. This is due to hoisting. In hoisting all the function declarations are hoisted at the top of their global scope which means that we can call these functions before their declaration in the code. This will not happen with functions that are stored in a variable as those functions are subject to the temporal dead zone.
 
-function addOne(num){ //
+function addOne(num){ 
     return num + 1
 }
 
-//addTwo(5)
+//addTwo(5) //This will show reference error.
 
-const addTwo = function(num){ //This type of function declaration is also called expression in which you store the function inside a variable. If you call this function above its declaration then it will show reference error. This is because these functions are subject to temporal dead zone.
+const addTwo = function(num){ //This type of function declaration is also called function expression in which you store the function inside a variable. If you call this function above its declaration then it will show reference error. This is because these functions are subject to temporal dead zone.
     return num + 2
 }
 
