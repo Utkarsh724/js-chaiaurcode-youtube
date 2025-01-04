@@ -51,5 +51,23 @@ const users = [
 //console.log(Object.values(tinderUser)); //Returns an array containing values of the specified object.
 //console.log(Object.entries(tinderUser)); 
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //Returns true if the specified object contains the specified key.
+//console.log(tinderUser.hasOwnProperty('isLoggedIn')); //Returns true if the specified object contains the specified key.
 
+//Destructuring of objects :-
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "Utkarsh"
+}
+
+const {courseInstructor: instructor} = course //Now we dont have to specify the object name everytime we want to access its key. This is called destructuring. We can also change the name for accessing the key by writing a new name after ':'.
+
+//console.log(courseInstructor);
+console.log(instructor);
+
+//{
+//    "name" : "Utkarsh",             //This is an example of json object which is given by api. The api gives this in the form of a string which is then parsed into a json object. In this usually, the keys and values both are also strings.
+//    "coursename" : "js in hindi",   //JSON full form - Javascript object notation
+//    "price" : "free",
+//}
